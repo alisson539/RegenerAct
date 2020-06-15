@@ -14,7 +14,7 @@
     --body-font: 'Cabin', sans-serif;
     --main-font-color-dark: #704404;
     --secondary-font-color: #704404;
-    --body-font-color: #776B04;
+    --body-font-color:#704404;
 }
 
 html {
@@ -50,13 +50,14 @@ p {
 }
 
 .sub-headline-others {
-    font-size: 12rem;
+    font-size: 8rem;
     font-family: var(--secondary-font);
     color: black;
     -webkit-text-stroke: .2px white;
-    font-weight: 500;
-    letter-spacing: 11px;
+    font-weight: 550;
+    letter-spacing: 5px;
     line-height: .8;
+    margin-top: 0rem;
 }
 
 
@@ -164,12 +165,22 @@ header {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url("images/hero.jpg") center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    
 }
 
 
@@ -269,35 +280,56 @@ header {
 
 .global-headline {
     text-align: center;
-    margin-top: 3.9rem;
 }
 
 .discover-our-story .global-headline {
-    margin-top: 6.9rem;
+    margin-top: 4rem;
 }
+
+.vl {
+    border-left: 2px solid #704404;
+    height: 150px;
+    position: absolute;
+    transform: translate(120%,-129%);
+    text-align: justify;
+  }
+
+.vr {
+    position: absolute;
+    transform: translate(10%,-100%);
+    text-align: justify;
+  }
 
 .global-headline .sub-headline {
-    letter-spacing: -1px;
-    line-height: -42;
+    letter-spacing: -5px;
+    line-height: -100;
+
 }
 
-.regeneract-info {
-    text-align: center;
+.regeneract-img {
+    background: url("images/slider.jpg") center no-repeat;
+    background-size: cover;
+    padding: 420px 60px;
+    transform: translateX(9.2%) ;
 }
 
 .regeneract-description {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    text-align: justify;
 }
 
 .regeneract-description p{
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 2.4rem;
+    margin-left: 30px;
 }
 
 .body-btn {
     font-size: 1.5rem;
     color: var(--secondary-font-color);
     position: relative;
+    left: 35%;
+    transform: translateY(-50%);
     transition: color .5s;
 }
 
@@ -314,7 +346,7 @@ header {
 
 .body-btn:hover, 
 .body-btn:hover {
-    color:var (var(--main-font-color-dark))
+    color: rgb(70, 42, 0);
 }
 
 .body-btn:hover::before, 
@@ -404,7 +436,7 @@ footer {
 
 @media screen and  (min-width: 900px) {
     section {
-        padding: 7.9rem;
+        padding: 0rem;
     }
 
     .menu-toggle {
