@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <!--Scroll reveal CDN-->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -27,12 +28,34 @@
                  <li class="nav-item"> <a href="#" class="nav-link">About us</a></li>
                  <li class="nav-item"> <a href="#" class="nav-link">Events & Workshops</a></li>
                  <li class="nav-item"> <a href="#" class="nav-link">Contact</a></li>
-             </ul>  
+                </ul>  
+              </nav>
+                
+                 <ul class="nav-list-lang">
+                 <li class="nav-item-lang"> 
+                     <button class="btn-lang">EN 
+                        <svg  height="20px" viewBox="20 -100 400 400" xmlns="http://www.w3.org/2000/svg" class="open-icon">
+ 
+                            <path 
+                                  d="M 100 100 L 300 100 L 200 300 z"
+                                  fill="#704404" 
+                                  stroke="#fff" 
+                                  stroke-width="15" />
+                           
+                          </svg>
+                        </button>
+                     <ul>
+                         <li><a href="" class="">PT</a></li>
+                     </ul>
+                 </li>
+                 </ul>  
           </nav>
 
         </div>
     </header>
-    <!--Header Ends-->
+
+<!--Header Ends-->
+
 <section class="hero" id="hero">
     <div class="container">
         <img src="/images/hero.jpg" alt="" class="parallax">
@@ -52,41 +75,78 @@
         </div>
     </div>
 </section>
+
 <!--Hero Ends-->
 
 <section class="discover-our-story">
-   <div class="container">
-      <div class="regeneract-info">
-         <div class="regeneract-description pagging-right animate-left">
-            <div class="global-headline">
-                <!--h2 class="sub-headline-others"> <span class="first-letter">A</span>bout us </h2-->
-             </div>
-             <p>
-                We are <b>facilitators of regenerative practices.</b> </br>
-                <br>The facilitator is like a teacher, but he approaches learning in a way that allows everyone to teach and learn.
-                Our mission is to identify processes and facilitate their development, making use of relevant tools, methods and materials, and monitoring the active collaboration of everybody.
-                Regenerative practices are content and actions that value Gaia's full life (the Earth as a living being of which we are a part), whether because they are related to ecology, collaboration, health, well-being, autonomy, or artistically promote awareness of these subjects. </br>  
-                <br><br><br><br><br><br><br><br>
-                <div class="vr">
-                <p><b>Relevant topics:</b></br>
-                - Nonviolent communication</br> - Resilient collectives</br> - Permaculture</br> - Permaculture</br>  - Agroecology</br> - Shared leadership</br> </p>
-                </div>
-                <div class="vl">
-                <p><b>The sharing of this knowledge <br> happens through:</b>
-                 <br>- Social media content;</br> - Courses and workshops;</br> - Private consultancy.</p>
-                </div>
-
-                <p> We think that this knowledge must be available to all, so we always seek inclusive strategies.</p>
-                
-
+<div class="container row no-gutters">
+   <div class="col no-gutters">
+       <div class="leftside">
+            <div class="regeneract-info">
+               <div class="regeneract-description pagging-right animate-left">
+                 <p>
+                    We are <b>facilitators of regenerative practices.</b> </br>
+                    <br>The facilitator is like a teacher, but he approaches learning in a way that allows everyone to teach and learn.
+                    Our mission is to identify processes and facilitate their development, making use of relevant tools, methods and materials, and monitoring the active collaboration of everybody.
+                    Regenerative practices are content and actions that value Gaia's full life (the Earth as a living being of which we are a part), whether because they are related to ecology, collaboration, health, well-being, autonomy, or artistically promote awareness of these subjects. </br>  
+                    <br><br><br><br><br><br><br><br>
+                    <div class="vr">
+                    <p><b>Relevant topics:</b></br>
+                    - Nonviolent communication</br> - Resilient collectives</br> - Permaculture</br>  - Agroecology</br> - Shared leadership</br> </p>
+                    </div>
+                    <div class="vl">
+                    <p><b>The sharing of this knowledge <br> happens through:</b>
+                     <br>- Social media content;</br> - Courses and workshops;</br> - Private consultancy.</p>
+                    </div>
     
-             <a href="" class="btn body-btn">Tell me more</a>
+                    <p> We think that this knowledge must be available to all, so we always seek inclusive strategies.</p>
+    
+        
+                 <a href="" class="btn body-btn">Tell me more</a>
+    
+    
+                </div>
             </div>
+        </div>        
+    </div>
+    
+    <div class="col no-gutters">
+        <div class="rightside">
 
-        <div class="regeneract-img animate-right"></div> 
-      </div>
+            <div class="carousel">
+                <button class="carousel_button carousel_button--left">
+                    <img src="images/slider/icons/left.png" alt="">
+                </button>
 
-   </div>
+                <div class="carousel_track-container">
+                    <ul class="carousel_track">
+                        <li class="carousel_slide current-slide">
+                            <img src="images/slider/slider_1.jpg" alt="" class="carousel_image">
+                        </li>
+                        <li class="carousel_slide hidden">
+                            <img src="images/slider/slider_2.jpg" alt="" class="carousel_image">
+                        </li>
+                        <li class="carousel_slide hidden">
+                            <img src="images/slider/slider_3.jpg" alt="" class="carousel_image">
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="carousel_button carousel_button--right">
+                    <img src="images/slider/icons/right.png" alt="">
+                </button>
+
+                <div class="carousel_nav">
+                    <button class="carousel_indicator current-slide"></button>
+                    <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
+                </div>
+
+
+            </div>
+        </div
+    ></div>
+</div>
 </section>
 
 <!--About us Ends-->
@@ -125,6 +185,15 @@
                                 <a href="#"><i class="fab fa-instagram"></i></a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="newsletter-container">
+                        <h4>Newsletter</h4>
+                        <form action="" class="newsletter-form">
+                            <input type="text" class="newsletter-input" placeholder="Your e-mail adress">
+                            <button class="newsletter-btn" type="submit">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
                 

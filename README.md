@@ -6,4 +6,5 @@ JS - Actions
 ----------
 
 
-
+-Abous us
+-Language of the website in the menu
