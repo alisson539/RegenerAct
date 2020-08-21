@@ -110,3 +110,41 @@ dotsNav.addEventListener('click', e => {
 
 /* Automatic Reproducer */
 
+
+/* Scroll Reveal */
+window.sr = ScrollReveal();
+
+sr.reveal('.animate-left', {
+   origin: 'left',
+   duration: 1000,
+   distance: '25rem',
+   delay: 300
+});
+
+sr.reveal('.animate-right', {
+   origin: 'right',
+   duration: 1000,
+   distance: '25rem',
+   delay: 600
+});
+
+sr.reveal('.animate-top', {
+   origin: 'top',
+   duration: 1000,
+   distance: '25rem',
+   delay: 600
+});
+
+
+sr.reveal('.animate-bottom', {
+   origin: 'bottom',
+   duration: 1000,
+   distance: '25rem',
+   delay: 400
+});
+
+/* Active translation */
+
+const menu_active = document.querySelector('.active');
+const menu_nav = document.querySelector('.nav-link');
+
